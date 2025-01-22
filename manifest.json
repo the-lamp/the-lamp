@@ -1,6 +1,6 @@
 {
-  "name": "My PWA",
-  "short_name": "PWA",
+  "name": "The Lamp",
+  "short_name": "TheLamp",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
