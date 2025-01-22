@@ -1,25 +1,85 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  background-color: #f4f4f4;
 }
-h1 {
-  color: #333;
-}
-button {
+
+header {
+  background: var(--primary-color);
+  color: #fff;
   padding: 10px 20px;
-  background-color: #007bff;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+button {
+  padding: 10px 15px;
+  background: var(--primary-color);
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
+
 button:hover {
-  background-color: #0056b3;
+  background: #0056b3;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+.intro, .data-display {
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.intro h2, .data-display h2 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
