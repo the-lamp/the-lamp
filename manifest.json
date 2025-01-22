@@ -1,7 +1,7 @@
 {
   "name": "The Lamp",
   "short_name": "TheLamp",
-  "start_url": "/",
+  "start_url": "https://thelamp-official.github.io/the-lamp/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
